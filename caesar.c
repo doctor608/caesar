@@ -125,7 +125,6 @@ char* decrypt(char* dest, const char* src, int key)
             dest[i] = (src[i] - key < shift) ? src[i] - key + 26 : src[i] - key;
         } else
             dest[i] = src[i];
-        printf("dest[i] == %c, src[i] == %c\n", dest[i], src[i]);
     }
 
     dest[i] = src[i];
